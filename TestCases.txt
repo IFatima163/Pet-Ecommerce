@@ -1,2 +1,3 @@
 fatima test case: As a user, i will use this e commerce platform to buy petcare items for my pets
 Sunbla test case: As a user, i want to be able to track my order so that I can see my order history and track
+Laiba test case: As a user , I want to search for products so that i can find what i am looking for.
