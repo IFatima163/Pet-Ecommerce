@@ -1,0 +1,26 @@
+As a user, i will use this e commerce platform to buy petcare items for my pets
+
+As a new user, I want to be able to create an account so that I can track my orders and see history of previous orders.
+
+As a customer, I want to be able to easily browse and search for products so that I can find what I am looking for.
+
+Database:
+
+products, receipt, customers, CustomerOrders, Seller
+
+relation wrt sir's tutorial:
+	prod = course
+	receipt = teacher (prodID),
+	customer = room, 
+	Seller = Vehicle (prod id), 
+	CustomerOrder = TeacherCourse (teacher id, course id) <customer id, order id>
+
+database creation till 19:50
+
+3 webservices:
+	mine: getting product details from receipt number
+		SELECT products.Name,products.Type FROM receipt,products WHERE receipt.ProductID = products.ID AND receipt.ID = <USER INPUT HERE>;
+	laiba's: list of products sold by a particular seller 
+		SELECT products.Name FROM seller,products WHERE products.ID = seller.ProductID AND seller.Name = <USER INPUT HERE>;
+	sunbla's: customer details of a particular order 
+		SELECT customer.Name,customer.Address FROM customerorder,customer WHERE customerorder.CustomerID = customer.ID AND customerorder.ReceiptID = <USER INPUT HERE>;
