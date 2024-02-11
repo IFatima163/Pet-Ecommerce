@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://main" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://main" xmlns:intf="http://main" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://main" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="SellerInformation">
+    <complexType>
+     <sequence>
+      <element name="sellerID" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="SellerInformationResponse">
+    <complexType>
+     <sequence>
+      <element name="SellerInformationReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="SellerInformationResponse">
+
+      <wsdl:part element="impl:SellerInformationResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="SellerInformationRequest">
+
+      <wsdl:part element="impl:SellerInformation" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="Information2">
+
+      <wsdl:operation name="SellerInformation">
+
+         <wsdl:input message="impl:SellerInformationRequest" name="SellerInformationRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:SellerInformationResponse" name="SellerInformationResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="Information2SoapBinding" type="impl:Information2">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="SellerInformation">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="SellerInformationRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="SellerInformationResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="Information2Service">
+
+      <wsdl:port binding="impl:Information2SoapBinding" name="Information2">
+
+         <wsdlsoap:address location="http://localhost:8080/Tutorial/services/Information2"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>
