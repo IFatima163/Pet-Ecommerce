@@ -42,7 +42,7 @@
   <ns1:parameter name="className" value="org.apache.axis.Version"/>
  </ns1:service>
  <ns1:service name="Information2" provider="java:RPC" style="wrapped" use="literal">
-  <ns2:operation name="sellerInformation" qname="ns1:SellerInformation" returnQName="ns1:SellerInformationReturn" returnType="xsd:string" soapAction="" xmlns:ns1="http://main" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://xml.apache.org/axis/wsdd/">
+  <ns2:operation name="sellerInformation" qname="ns1:sellerInformation" returnQName="ns1:sellerInformationReturn" returnType="xsd:string" soapAction="" xmlns:ns1="http://main" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://xml.apache.org/axis/wsdd/">
    <ns2:parameter qname="ns1:sellerID" type="xsd:int"/>
   </ns2:operation>
   <ns1:parameter name="allowedMethods" value="sellerInformation"/>
@@ -55,7 +55,7 @@
   <ns1:parameter name="wsdlServiceElement" value="Information2Service"/>
  </ns1:service>
  <ns1:service name="Information" provider="java:RPC" style="wrapped" use="literal">
-  <ns1:operation name="productinformation" qname="ns2:Productinformation" returnQName="ns2:ProductinformationReturn" returnType="xsd:string" soapAction="" xmlns:ns2="http://main" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ns1:operation name="productinformation" qname="ns2:productinformation" returnQName="ns2:productinformationReturn" returnType="xsd:string" soapAction="" xmlns:ns2="http://main" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
    <ns1:parameter qname="ns2:receiptID" type="xsd:int"/>
   </ns1:operation>
   <ns1:parameter name="allowedMethods" value="productinformation"/>

@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class Information {
-	public String Productinformation(int receiptID)
+	public String productinformation(int receiptID)
 	{
 		try
 		{

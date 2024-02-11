@@ -4,34 +4,34 @@
 Built on Apr 22, 2006 (06:55:48 PDT)-->
  <wsdl:types>
   <schema elementFormDefault="qualified" targetNamespace="http://main" xmlns="http://www.w3.org/2001/XMLSchema">
-   <element name="Productinformation">
+   <element name="productinformation">
     <complexType>
      <sequence>
       <element name="receiptID" type="xsd:int"/>
      </sequence>
     </complexType>
    </element>
-   <element name="ProductinformationResponse">
+   <element name="productinformationResponse">
     <complexType>
      <sequence>
-      <element name="ProductinformationReturn" type="xsd:string"/>
+      <element name="productinformationReturn" type="xsd:string"/>
      </sequence>
     </complexType>
    </element>
   </schema>
  </wsdl:types>
 
-   <wsdl:message name="ProductinformationResponse">
+   <wsdl:message name="productinformationResponse">
 
-      <wsdl:part element="impl:ProductinformationResponse" name="parameters">
+      <wsdl:part element="impl:productinformationResponse" name="parameters">
 
       </wsdl:part>
 
    </wsdl:message>
 
-   <wsdl:message name="ProductinformationRequest">
+   <wsdl:message name="productinformationRequest">
 
-      <wsdl:part element="impl:Productinformation" name="parameters">
+      <wsdl:part element="impl:productinformation" name="parameters">
 
       </wsdl:part>
 
@@ -39,13 +39,13 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
    <wsdl:portType name="Information">
 
-      <wsdl:operation name="Productinformation">
+      <wsdl:operation name="productinformation">
 
-         <wsdl:input message="impl:ProductinformationRequest" name="ProductinformationRequest">
+         <wsdl:input message="impl:productinformationRequest" name="productinformationRequest">
 
        </wsdl:input>
 
-         <wsdl:output message="impl:ProductinformationResponse" name="ProductinformationResponse">
+         <wsdl:output message="impl:productinformationResponse" name="productinformationResponse">
 
        </wsdl:output>
 
@@ -57,17 +57,17 @@ Built on Apr 22, 2006 (06:55:48 PDT)-->
 
       <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
 
-      <wsdl:operation name="Productinformation">
+      <wsdl:operation name="productinformation">
 
          <wsdlsoap:operation soapAction=""/>
 
-         <wsdl:input name="ProductinformationRequest">
+         <wsdl:input name="productinformationRequest">
 
             <wsdlsoap:body use="literal"/>
 
          </wsdl:input>
 
-         <wsdl:output name="ProductinformationResponse">
+         <wsdl:output name="productinformationResponse">
 
             <wsdlsoap:body use="literal"/>
 

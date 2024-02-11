@@ -10,7 +10,7 @@
       <parameter name="className" value="main.Information"/>
       <parameter name="wsdlPortType" value="Information"/>
       <parameter name="typeMappingVersion" value="1.2"/>
-      <operation xmlns:operNS="http://main" xmlns:retNS="http://main" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="productinformation" qname="operNS:Productinformation" returnQName="retNS:ProductinformationReturn" returnType="rtns:string" soapAction="">
+      <operation xmlns:operNS="http://main" xmlns:retNS="http://main" xmlns:rtns="http://www.w3.org/2001/XMLSchema" name="productinformation" qname="operNS:productinformation" returnQName="retNS:productinformationReturn" returnType="rtns:string" soapAction="">
         <parameter xmlns:pns="http://main" xmlns:tns="http://www.w3.org/2001/XMLSchema" qname="pns:receiptID" type="tns:int"/>
       </operation>
       <parameter name="allowedMethods" value="productinformation"/>

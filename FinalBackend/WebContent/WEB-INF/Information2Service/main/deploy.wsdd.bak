@@ -20,7 +20,7 @@
       <parameter name="className" value="main.Information2SoapBindingImpl"/>
       <parameter name="wsdlPortType" value="Information2"/>
       <parameter name="typeMappingVersion" value="1.2"/>
-      <operation name="sellerInformation" qname="operNS:SellerInformation" xmlns:operNS="http://main" returnQName="retNS:SellerInformationReturn" xmlns:retNS="http://main" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      <operation name="sellerInformation" qname="operNS:sellerInformation" xmlns:operNS="http://main" returnQName="retNS:sellerInformationReturn" xmlns:retNS="http://main" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
         <parameter qname="pns:sellerID" xmlns:pns="http://main" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
       </operation>
       <parameter name="allowedMethods" value="sellerInformation"/>

@@ -8,7 +8,7 @@
 </head>
 <body>
 		<h1>Customer Information</h1>
-	<form action="Page2.jsp">
+	<form action="page2.jsp">
 		<label>Receipt ID to view customers of</label>
 		<br/><br/> 
 		<input name="receiptID"></input>
